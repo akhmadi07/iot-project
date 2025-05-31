@@ -27,8 +27,8 @@ const chart = new Chart(ctx, {
 // Fetch data dari Node-RED
 async function fetchData() {
   try {
-    // Ganti URL dengan endpoint Node-RED Anda
-    const response = await fetch('http://203.194.114.58:1881/api/data');
+    // Update URL fetch ke path relatif Edge Functions
+    const response = await fetch('/api/data'); // Path relatif via Edge Functions
     const data = await response.json();
     
     // Update UI
