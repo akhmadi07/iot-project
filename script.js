@@ -28,7 +28,7 @@ const chart = new Chart(ctx, {
 async function fetchData() {
   try {
     // Ganti URL dengan endpoint Node-RED Anda
-    const response = await fetch('203.194.114.58:1881/api/data');
+    const response = await fetch('http://203.194.114.58:1881/api/data');
     const data = await response.json();
     
     // Update UI
